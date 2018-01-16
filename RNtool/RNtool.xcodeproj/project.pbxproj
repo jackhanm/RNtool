@@ -18,7 +18,9 @@
 		6661B47B200C963A00D0D958 /* 18010801 in Resources */ = {isa = PBXBuildFile; fileRef = 6661B47A200C963A00D0D958 /* 18010801 */; };
 		6661B47D200C965000D0D958 /* 18010802 in Resources */ = {isa = PBXBuildFile; fileRef = 6661B47C200C965000D0D958 /* 18010802 */; };
 		6661B480200C9A1C00D0D958 /* NSString+WZXSSLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661B47E200C9A1C00D0D958 /* NSString+WZXSSLTool.m */; };
-		6661B483200CA42500D0D958 /* WHCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661B481200CA42500D0D958 /* WHCFileManager.m */; };
+		6661B4B5200DEC5900D0D958 /* 18010800 in Resources */ = {isa = PBXBuildFile; fileRef = 6661B4B4200DEC5900D0D958 /* 18010800 */; };
+		6661B4B7200DEC6200D0D958 /* WHCFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6661B4B6200DEC6200D0D958 /* WHCFileManager.m */; };
+		6661B4D9200DF3D200D0D958 /* 18010700 in Resources */ = {isa = PBXBuildFile; fileRef = 6661B4D8200DF3D200D0D958 /* 18010700 */; };
 		FC83A63CFD6ABE7163995FB2 /* libPods-RNtool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0202E660240436B22EE25F0 /* libPods-RNtool.a */; };
 /* End PBXBuildFile section */
 
@@ -61,8 +63,10 @@
 		6661B47C200C965000D0D958 /* 18010802 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 18010802; sourceTree = "<group>"; };
 		6661B47E200C9A1C00D0D958 /* NSString+WZXSSLTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WZXSSLTool.m"; sourceTree = "<group>"; };
 		6661B47F200C9A1C00D0D958 /* NSString+WZXSSLTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WZXSSLTool.h"; sourceTree = "<group>"; };
-		6661B481200CA42500D0D958 /* WHCFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHCFileManager.m; sourceTree = "<group>"; };
 		6661B482200CA42500D0D958 /* WHCFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHCFileManager.h; sourceTree = "<group>"; };
+		6661B4B4200DEC5900D0D958 /* 18010800 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 18010800; sourceTree = "<group>"; };
+		6661B4B6200DEC6200D0D958 /* WHCFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHCFileManager.m; sourceTree = "<group>"; };
+		6661B4D8200DF3D200D0D958 /* 18010700 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 18010700; sourceTree = "<group>"; };
 		A0202E660240436B22EE25F0 /* libPods-RNtool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNtool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7853775D9DA09CEF6DBE3D1 /* Pods-RNtool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNtool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNtool/Pods-RNtool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,12 +122,14 @@
 		6661B447200C962500D0D958 /* RNtool */ = {
 			isa = PBXGroup;
 			children = (
-				6661B47F200C9A1C00D0D958 /* NSString+WZXSSLTool.h */,
-				6661B47E200C9A1C00D0D958 /* NSString+WZXSSLTool.m */,
-				6661B482200CA42500D0D958 /* WHCFileManager.h */,
-				6661B481200CA42500D0D958 /* WHCFileManager.m */,
+				6661B4D8200DF3D200D0D958 /* 18010700 */,
+				6661B4B4200DEC5900D0D958 /* 18010800 */,
 				6661B47C200C965000D0D958 /* 18010802 */,
 				6661B47A200C963A00D0D958 /* 18010801 */,
+				6661B4B6200DEC6200D0D958 /* WHCFileManager.m */,
+				6661B482200CA42500D0D958 /* WHCFileManager.h */,
+				6661B47E200C9A1C00D0D958 /* NSString+WZXSSLTool.m */,
+				6661B47F200C9A1C00D0D958 /* NSString+WZXSSLTool.h */,
 				6661B448200C962500D0D958 /* AppDelegate.h */,
 				6661B449200C962500D0D958 /* AppDelegate.m */,
 				6661B44B200C962500D0D958 /* ViewController.h */,
@@ -281,7 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6661B4B5200DEC5900D0D958 /* 18010800 in Resources */,
 				6661B455200C962500D0D958 /* LaunchScreen.storyboard in Resources */,
+				6661B4D9200DF3D200D0D958 /* 18010700 in Resources */,
 				6661B452200C962500D0D958 /* Assets.xcassets in Resources */,
 				6661B47D200C965000D0D958 /* 18010802 in Resources */,
 				6661B450200C962500D0D958 /* Main.storyboard in Resources */,
@@ -365,7 +373,7 @@
 				6661B44D200C962500D0D958 /* ViewController.m in Sources */,
 				6661B458200C962500D0D958 /* main.m in Sources */,
 				6661B44A200C962500D0D958 /* AppDelegate.m in Sources */,
-				6661B483200CA42500D0D958 /* WHCFileManager.m in Sources */,
+				6661B4B7200DEC6200D0D958 /* WHCFileManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
