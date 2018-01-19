@@ -52,11 +52,36 @@
 * [iOS中文件操作(NSFileManager)](https://www.jianshu.com/p/59e0b1904fb7)
 * [SSZipArchive使用详解](https://www.jianshu.com/p/cfc9c9d2aacd)
 * [iOS 沙盒机制](https://www.jianshu.com/p/1903bcab60e4)
+*
+
+### 音视频处理
+* [iOS AVPlayer之无缝切换播放(类似今日头条视频播放效果)](https://www.jianshu.com/p/2c12c0cd9cde)
+* [iOS 在线视频生成GIF图功能](https://www.jianshu.com/p/5ea3cbdb17ae)
+* [iOS 视频播放之切换清晰度](https://www.jianshu.com/p/975d93ac787f)
+* [iOS 下载URL不断改变的情况下 使用 resumeData做断点续传](https://www.jianshu.com/p/95ab4e6406eb)
+
+### ios后台下载 断点续传
+* [NSURLSessionConfiguration](https://www.jianshu.com/p/7c1dd07a35f2)
+* [[iOS-Foundation] Networking](https://www.jianshu.com/p/a5251d9ee5c0)
+* [iOS NSURLSession后台下载和断点续传](http://www.voidcn.com/article/p-fcijvivt-bgz.html)
+* [iOS 后台下载及管理库](https://www.jianshu.com/p/2ccb34c460fd)
+* [YCDownloadSession的github](https://github.com/onezens/YCDownloadSession)
+* [基于iOS 10、realm封装的下载器（支持存储读取、断点续传、后台下载、杀死APP重启后的断点续传等功能）](https://www.jianshu.com/p/b4edfa0b71d8)
+* [iOS使用NSURLSession进行下载（包括后台下载，断点下载）](https://www.jianshu.com/p/1211cf99dfc3)
+* [iOS断点续传和后台下载(基于AFNetworking)](https://www.jianshu.com/p/83fd0fcdf898)
+* [iOS后台下载管理工具-XXDownload](https://www.jianshu.com/p/e566bc3ac365)
+* [iOS11 下载之断点续传的bug](https://www.jianshu.com/p/2d8bc5b4563f)
+* [从 NSURLConnection 到 NSURLSession](https://objccn.io/issue-5-4/)
+* [【iOS小结】NSURLSession](https://www.jianshu.com/p/a8fc22afb739)
+* [iOS 后台运行实现总结](https://www.jianshu.com/p/d3e279de2e32)
+* [NSURLSession](https://www.jianshu.com/p/0298b4f9986c)
+* [stackoverflow](https://stackoverflow.com/questions/37348108/nsurlsession-background-transfer-service-for-download-task-can-it-work-even-whe)
 
 ###组件
 * [iOS-APP启动页加载广告](https://www.jianshu.com/p/c0381fa8b7e0)
 * [【iOS干货：快速集成tableView折叠cell的小框架】](https://www.jianshu.com/p/fa8e80766529)
 * [iOS 媒体库完整流程封装：图片视频选择、展示布局、上传等（一）](https://www.jianshu.com/p/9ff1e8e68a21)
+* [iOS 指纹识别常见问题汇总](https://www.jianshu.com/p/d44b7d85e0a6)
 
 
 ###错误处理
@@ -130,6 +155,10 @@
 * [React Native封装Form表单组件](https://www.jianshu.com/p/528be8872f34)
 * [React Native获取移动设备信息(react-native-device-info)如何使用](https://www.jianshu.com/p/24f1794db48a)
 * [React-native之开源轮播组件react-native-swiper](https://www.jianshu.com/p/939c26b9cc92)
+* [React Native封装视频播放器组件](https://www.jianshu.com/p/1c5c36b3c19b)
+* [视频组件](https://github.com/react-native-community/react-native-video)
+* [视频编辑](https://github.com/shahen94/react-native-video-processing)
+
 
 ### 教程
 * [ReactNative实战系列](https://www.jianshu.com/p/34ef5d19ea12)
@@ -140,7 +169,10 @@
 * [从一个实战项目来看一下React Native开发的几个关键技术点](https://www.jianshu.com/p/241241aae095)
 * [写给iOS开发者的React Native学习路线](https://www.jianshu.com/p/dd69db0a6451)
 * [RN 系列之--什么是 ReactNative](https://www.jianshu.com/p/717ccdd7c18c)
-
+* [郭东升的博客](http://www.cnblogs.com/gdsblog)
+* [亮总的博客](http://blog.csdn.net/u013718120/article/details/54881841)
+* [江清清的博客](http://www.lcode.org/react-native/)
+* [光头强的博客](https://www.jianshu.com/u/023338566ca5)
 
 ### 异常处理
 * [关于RN热更新-iOS端捕获加载jsbundle异常解决方案](https://www.jianshu.com/p/3db03c8c4ae7)

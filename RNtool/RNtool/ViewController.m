@@ -111,7 +111,7 @@
     
     NSString *txtPath2 = [jsversionCachePath2 stringByAppendingPathComponent:@"main.jsbundle"]; // 此时仅存在路径，文件并没有真实存在
     NSString *txtPathrnNew = [jsversionCachePath2 stringByAppendingPathComponent:[NSString stringWithFormat:@"%@all.zip",rnNew]]; // 此时仅存在路径，文件并没有真实存在
-    
+    NSString *patchzip = [jsversionCachePath2 stringByAppendingPathComponent:@"patch.zip"];
 
     DiffMatchPatch *dmp = [DiffMatchPatch new];
 
@@ -167,6 +167,8 @@
     NSLog(@"bundle old %@", [txtPath getFileMD5WithPath:txtPath]);
     NSLog(@"bundle new%@",[txtPath2 getFileMD5WithPath:txtPath]);
     NSLog(@"bundle patch%@",[txtPath3 getFileMD5WithPath:txtPath3]);
+    NSLog(@"bundle patch zip md5%@",[patchzip getFileMD5WithPath:patchzip]);
+    
 //    self.dict =[NSMutableDictionary dictionaryWithDictionary: @{rnNew : [txtPath3 getFileMD5WithPath:txtPath3]}] ;
     self.dict = [NSMutableDictionary dictionary];
      [self.dict setValue:[txtPath3 getFileMD5WithPath:txtPath3] forKey:@"bundleMd5"];
@@ -176,6 +178,7 @@
     [dicOld setValue:[txtPathrnold getFileMD5WithPath:txtPathrnold] forKey:@"zip old"];
     NSMutableDictionary *dicNew = [NSMutableDictionary dictionary];
     [dicNew setValue:[txtPathrnNew getFileMD5WithPath:txtPathrnNew] forKey:@"zip new"];
+      [dicNew setValue:[patchzip getFileMD5WithPath:patchzip] forKey:@"patch zip"];
     [self writrDataWithDic:dicOld parm:rnold];
     [self writrDataWithDic:dicNew parm:rnNew];
     
@@ -189,7 +192,7 @@
         
         /* JSON data for obj, or nil if an internal error occurs. The resulting data is a encoded in UTF-8.
          */
-        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self.dict options:0 error:NULL];
+        NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:0 error:NULL];
         
         /*
          Writes the bytes in the receiver to the file specified by a given path.
@@ -258,14 +261,6 @@
               
             }else{
                 
-//                    for (int k = 0; k< listArr.count; k++) {
-//                        if (![[NSString stringWithFormat:@"%@",[self.imagenewArr objectAtIndex:i]] isEqualToString:[NSString stringWithFormat:@"%@",[listArr objectAtIndex:k]]]) {
-//                            [listArr addObject:[self.imagenewArr objectAtIndex:i]];
-//                             NSLog(@"不一样的有%@",[NSString stringWithFormat:@"%@",[self.imagenewArr objectAtIndex:i]]);
-//                        }
-//
-//                    }
-//
             }
           
         }
@@ -273,6 +268,23 @@
 
 //
     NSLog(@"图片差异%@",self.imagenewArr);
+    
+    //将图片拷贝到生成的目录下
+    NSString *docPath = [NSString stringWithFormat:@"%@%@ %@%@",@"/Users/yuhao/Desktop/js版本/",rnNew,[self getCurrentTimes],@"/images"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:docPath]) {
+        
+    }else{
+        [[NSFileManager defaultManager] createDirectoryAtPath:docPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    for (int i = 0; i < self.imagenewArr.count; i++) {
+        NSString *oriImage=@"";
+        NSString *destinImage = @"";
+        if (![[self.imagenewArr objectAtIndex:i] isEqualToString:@".DS_Store"]) {
+            oriImage = [txtPath2 stringByAppendingPathComponent:[self.imagenewArr objectAtIndex:i]];
+            destinImage = [docPath stringByAppendingPathComponent: [[self.imagenewArr objectAtIndex:i] substringFromIndex:11]];
+            [[NSFileManager defaultManager] moveItemAtPath:oriImage toPath:destinImage error:nil];
+        }
+    }
     
     
     
